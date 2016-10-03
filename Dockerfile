@@ -7,4 +7,4 @@ ONBUILD ADD . /app
 WORKDIR /app
 EXPOSE 8080
 
-CMD ["/usr/bin/python", "main.py"]
+CMD ["/usr/bin/python", "/app/main.py"]
