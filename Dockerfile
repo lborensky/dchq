@@ -1,7 +1,7 @@
 FROM wow73611/python
 
-ONBUILD ADD requirements.txt /app/requirements.txt
-ONBUILD RUN /usr/local/bin/pip install -r /app/requirements.txt
+COPY requirements.txt /app/requirements.txt
+RUN /usr/local/bin/pip install -r /app/requirements.txt
 COPY main.py /app/main.py
 
 WORKDIR /app
